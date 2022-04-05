@@ -1,11 +1,11 @@
 <?php 
-  include_once('../inc/header.php'); 
+  include_once('inc/header.php'); 
 ?>
   <body class="app sidebar-mini">
     <!-- Navbar-->
-    <?php include_once('../inc/navbar.php'); ?>
+    <?php include_once('inc/navbar.php'); ?>
     <!-- Sidebar menu-->
-    <?php include_once('../inc/sidebar.php'); ?>
+    <?php include_once('inc/sidebar.php'); ?>
 
     <main class="app-content">
       <div class="app-title">
@@ -20,14 +20,14 @@
       <div class="row">
         <div class="col-md-12">
           <div class="tile">
-            <div class="tile-body">Create a beautiful dashboard</div>
+            <div class="tile-body">Blank Page</div>
           </div>
         </div>
       </div>
     </main>
     <!-- Essential javascripts for application to work-->
     <?php
-      include_once('../inc/footer.php');
+      include_once('inc/footer.php');
     ?>
     </body>
 </html>

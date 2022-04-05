@@ -1,11 +1,11 @@
 <?php 
-  include_once('../inc/header.php'); 
+  include_once('inc/header.php'); 
 ?>
   <body class="app sidebar-mini">
     <!-- Navbar-->
-    <?php include_once('../inc/navbar.php'); ?>
+    <?php include_once('inc/navbar.php'); ?>
     <!-- Sidebar menu-->
-    <?php include_once('../inc/sidebar.php'); ?>
+    <?php include_once('inc/sidebar.php'); ?>
 
     <main class="app-content">
       <div class="app-title">
@@ -108,7 +108,7 @@
 
     <!-- Essential javascripts for application to work-->
     <?php
-      include_once('../inc/footer.php');
+      include_once('inc/footer.php');
     ?>
   </body>
 </html>

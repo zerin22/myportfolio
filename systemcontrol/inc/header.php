@@ -1,3 +1,12 @@
+<?php
+    include_once('../core/Database.php');
+    include_once('../core/SessionUser.php');
+    SessionUser::init();
+
+    SessionUser::checkUserSession();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,6 +36,9 @@
     <!--Data Table CSS-->
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/datatable/datatables.css">
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/datatable/dataTables.bootstrap4.css">
+
+  <!-- Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/css/style.css">
 
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

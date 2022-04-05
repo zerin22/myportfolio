@@ -10,9 +10,9 @@
         <li><a class="app-menu__item active" href="../../systemcontrol/dashboard.php"><i class="app-menu__icon fa fa-dashboard"></i><span class="app-menu__label">Dashboard</span></a></li>
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-laptop"></i><span class="app-menu__label">Pages</span><i class="treeview-indicator fa fa-angle-right"></i></a>
         <ul class="treeview-menu">
-            <li><a class="treeview-item" href="../../systemcontrol/pages/blank.php"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
-            <li><a class="treeview-item" href="../../systemcontrol/pages/form.php"><i class="icon fa fa-circle-o"></i> Form</a></li>
-            <li><a class="treeview-item" href="../../systemcontrol/pages/table.php"><i class="icon fa fa-circle-o"></i> Table</a></li>
+            <li><a class="treeview-item" href="../../systemcontrol/blank.php"><i class="icon fa fa-circle-o"></i> Blank Page</a></li>
+            <li><a class="treeview-item" href="../../systemcontrol/form.php"><i class="icon fa fa-circle-o"></i> Form</a></li>
+            <li><a class="treeview-item" href="../../systemcontrol/table.php"><i class="icon fa fa-circle-o"></i> Table</a></li>
           </ul>
         </li>
       </ul>
