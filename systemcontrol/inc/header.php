@@ -19,9 +19,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/css/main.css">
+    
     <!--Selectize CSS-->
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/selectize/dist/css/selectize.css">
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/selectize/dist/css/selectize.bootstrap4.css">
+    
+    <!--Data Table CSS-->
+    <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/datatable/datatables.css">
+    <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/datatable/dataTables.bootstrap4.css">
+
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
