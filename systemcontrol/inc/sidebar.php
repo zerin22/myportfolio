@@ -2,7 +2,10 @@
     <aside class="app-sidebar">
       <div class="app-sidebar__user"><img style="width: 30px;" class="app-sidebar__user-avatar" src="../../systemcontrol/assets/img/avatars/default.png" alt="User Image">
         <div>
-          <p class="app-sidebar__user-name">Tajrin Zerin</p>
+          <p class="app-sidebar__user-name">
+            <?php SessionUser::getUser('user_fname'); ?>
+            <?php SessionUser::getUser('user_lname'); ?>
+          </p>
           <p class="app-sidebar__user-designation">Developer</p>
         </div>
       </div>

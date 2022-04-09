@@ -2,7 +2,8 @@
 class Login{
     private $db;
 
-    public function __construct(){
+    public function __construct()
+    {
         $this->db = new Database();
     }
 
@@ -35,7 +36,7 @@ class Login{
 
             //Session set for login user
             SessionUser::setUser('userLogin', true);
-            SessionUser::setUser('user_id',$userValue['id']);
+            SessionUser::setUser('user_id', $userValue['id']);
             SessionUser::setUser('user_fName', $userValue['first_name']);
             SessionUser::setUser('user_lName', $userValue['last_name']);
             SessionUser::setUser('user_email', $userValue['email']);

@@ -1,10 +1,17 @@
 <?php
     include_once('../core/Database.php');
     include_once('../core/SessionUser.php');
+    include_once('../class/User.php');
     SessionUser::init();
 
-    SessionUser::checkUserSession();
+    $user = new User();
 
+    if(!$user->checkUserProfile())
+    {
+        header("Location:create_profile.php");
+    }
+
+    SessionUser::checkUserSession();
 ?>
 
 <!DOCTYPE html>
