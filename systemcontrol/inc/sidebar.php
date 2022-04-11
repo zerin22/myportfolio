@@ -3,10 +3,13 @@
       <div class="app-sidebar__user"><img style="width: 30px;" class="app-sidebar__user-avatar" src="../../systemcontrol/assets/img/avatars/default.png" alt="User Image">
         <div>
           <p class="app-sidebar__user-name">
-            <?php SessionUser::getUser('user_fname'); ?>
-            <?php SessionUser::getUser('user_lname'); ?>
+            <?php SessionUser::getUser('user_fName'); ?>
+            <?php SessionUser::getUser('user_lName'); ?>
           </p>
-          <p class="app-sidebar__user-designation">Developer</p>
+          <p class="app-sidebar__user-designation">
+            <?php echo SessionUser::getUser('user_fName');?> 
+            <?php echo SessionUser::getUser('user_lName');?>
+          </p>
         </div>
       </div>
       <ul class="app-menu">

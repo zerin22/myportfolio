@@ -41,6 +41,19 @@ class Login{
             SessionUser::setUser('user_lName', $userValue['last_name']);
             SessionUser::setUser('user_email', $userValue['email']);
 
+            $user_id = SessionUser::getUser('user_id');
+            $profileQuery = "SELECT * FROM profiles WHERE user_id = '$user_id'";
+            $profileResult = $this->db->select($profileQuery);
+
+            if($profileResult != false){
+                $profileData = $profileResult->fetch_assoc();
+
+                SessionUser::setUser('user_phone', $profileData['phone']);
+                SessionUser::setUser('user_address', $profileData['address']);
+                SessionUser::setUser('user_about', $profileData['about']);
+
+                
+            }
             //Redirecting to dashboard after login and session set
             header("Location:dashboard.php");
         }else{

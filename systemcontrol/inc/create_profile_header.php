@@ -1,19 +1,17 @@
 <?php
-    include_once('../core/Database.php');
-    include_once('../core/SessionUser.php');
-    include_once('../core/Format.php');
-    include_once('../class/User.php');
-    SessionUser::init();
+  include_once('../core/Database.php');
+  include_once('../core/SessionUser.php');
+  include_once('../class/User.php');
+  SessionUser::init();
 
-    $user = new User();
-    $format = new Format();
+  $user = new User();
 
-    if(!$user->checkUserProfile())
-    {
-        header("Location:create_profile.php");
-    }
+  if($user->checkUserProfile())
+  {
+    header("Location:dashboard.php");
+  }
+  SessionUser::checkUserSession();
 
-    SessionUser::checkUserSession();
 ?>
 
 <!DOCTYPE html>
@@ -31,13 +29,12 @@
     <meta property="og:url" content="http://pratikborsadiya.in/blog/vali-admin">
     <meta property="og:image" content="http://pratikborsadiya.in/blog/vali-admin/hero-social.png">
     <meta property="og:description" content="Vali is a responsive and free admin theme built with Bootstrap 4, SASS and PUG.js. It's fully customizable and modular.">
-    <title><?php echo $format->title(); ?></title>
+    <title>Create Profile</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Main CSS-->
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/css/style.css">
     
     <!--Selectize CSS-->
     <link rel="stylesheet" type="text/css" href="../../systemcontrol/assets/js/plugins/selectize/dist/css/selectize.css">
@@ -52,4 +49,9 @@
 
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+      if ( window.history.replaceState ) {
+          window.history.replaceState( null, null, window.location.href );
+      }
+    </script>
   </head>
