@@ -24,6 +24,11 @@
                     <div>
                         <img class="profile-img center-img" src="assets/img/avatars/default.png" alt="">
                     </div>
+
+                    <div class="text-center mt-3 mb-3">
+                      <a href="upload_avatar.php">Upload Avatar</a>
+                    </div>
+                    
                     <table class="table table-bordered mt-3">
                         <tbody>
                             <tr>

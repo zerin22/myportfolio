@@ -51,7 +51,6 @@
                   <div class="form-group btn-container">
                     <input type="submit" class="btn btn-primary float-right" name="createProfile" value="Create Profile" >
                   </div>
-                  </div>
                 </form>
               </div>
             </div>
