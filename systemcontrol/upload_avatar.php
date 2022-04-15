@@ -27,7 +27,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <?php
-                if(isset($$uploadAvatar))
+                if(isset($uploadAvatar))
                 {
                   echo $uploadAvatar;
                 }
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-group btn-container">
-                        <input type="submit" class="btn btn-primary float-right" name="uploadAvatar" value="Upload" >
+                        <input type="submit" class="btn btn-primary float-right" name="uploadAvatar" value="upload" >
                     </div>
                     </form>
               </div>

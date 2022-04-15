@@ -37,6 +37,20 @@ class Helper{
 	}
 
 	//Getting User Avatar
-	
+	public function getAvatar($user_id)
+	{
+		$query = "SELECT * FROM `profiles` WHERE `user_id` = '$user_id'";
+		$result = $this->db->select($query);
+
+		if($result)
+		{
+			$userData = $result->fetch_assoc();
+			$avatar = $userData['avatar'];
+			return $avatar;
+		}else{
+			$avatar = 'default.png';
+			return $avatar;
+		}
+	}
 }
 ?>

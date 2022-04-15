@@ -249,13 +249,15 @@ class User{
         $imageName = str_shuffle(time()).'.'.$ext;
 
         // create an image manager instance with favored driver (gd=Graphics Driver)
+        //$manager = new ImageManager(['driver' => 'gd']);
         $manager = new ImageManager(['driver' => 'gd']);
 
         //finally create image instances
-        $image = $manager->make($avatar['user_avatar']['tmp_name'])->resize(200,200);
+       // $image = $manager->make($avatar["user_avatar"]["tmp_name"])->resize(200,200);
+        $image = $manager->make($avatar["user_avatar"]["tmp_name"])->resize(200, 200);
 
         //Checking directory
-        $dir = "assets/img/";
+        $dir = "assets/img/avatars/";
         if (!file_exists($dir)) 
         {
             mkdir($dir, 0777, true);
@@ -285,7 +287,7 @@ class User{
                             UPDATE `profiles`
                             SET 
                             `avatar` = '$imageName'
-                            WHERE `user_id` = 'user_id'
+                            WHERE `user_id` = '$user_id'
                         ";
         $updateResult = $this->db->update($queryUpdate);
 
