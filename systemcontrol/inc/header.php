@@ -2,13 +2,14 @@
     include_once('../core/Database.php');
     include_once('../core/SessionUser.php');
     include_once('../core/Helper.php');
-    include_once('../core/Format.php');
     include_once('../class/User.php');
+    include_once('../class/Setting.php');
     SessionUser::init();
 
     $helper = new Helper();
     $user = new User();
-    $format = new Format();
+    $settings = new Setting();
+    
 
     if(!$user->checkUserProfile())
     {

@@ -306,6 +306,7 @@ class User{
             $msg = "
                      <div class='alert alert-success mt-3 text-center'>
                          <h4>Avatar uploaded successfully!</h4>
+                         <a href='profile.php'>Click Here</a> for Profile View.
                      </div>
                  ";
             return $msg;

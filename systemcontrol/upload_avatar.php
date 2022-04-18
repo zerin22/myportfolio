@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="form-group btn-container">
-                        <input type="submit" class="btn btn-primary float-right" name="uploadAvatar" value="upload" >
+                        <input type="submit" class="btn btn-primary float-right" name="uploadAvatar" value="Upload" >
                     </div>
                     </form>
               </div>

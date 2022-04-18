@@ -28,7 +28,7 @@ class Helper{
 			$title = 'Update Password';
 		}elseif ($title == 'upload_avatar') {
 			$title = 'Upload Avatar';
-		}elseif ($title == 'settings') {
+		}elseif ($title == 'setting') {
 			$title = 'Site Setting';
 		}
         
@@ -50,6 +50,22 @@ class Helper{
 		}else{
 			$avatar = 'default.png';
 			return $avatar;
+		}
+	}
+
+	//Get Site Setting
+	public function getSetting($key)
+	{
+		$query = "SELECT * FROM `settings` WHERE `key` = '$key'";
+		$result = $this->db->select($query);
+
+		if($result)
+		{
+			$settingData = $result->fetch_assoc();
+			$value = $settingData['value'];
+			return $value;
+		}else{
+			return 'NULL';
 		}
 	}
 }

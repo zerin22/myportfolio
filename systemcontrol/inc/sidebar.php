@@ -1,6 +1,6 @@
 <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img style="width: 30px;" class="app-sidebar__user-avatar" src="../../systemcontrol/assets/img/avatars/default.png" alt="User Image">
+      <div class="app-sidebar__user"><img style="width: 30px;" class="app-sidebar__user-avatar" src="assets/img/avatars/<?php echo $helper->getAvatar(SessionUser::getUser('user_id')); ?>" alt="User Image">
         <div>
           <p class="app-sidebar__user-name">
             <?php SessionUser::getUser('user_fName'); ?>
@@ -21,5 +21,6 @@
             <li><a class="treeview-item" href="../../systemcontrol/table.php"><i class="icon fa fa-circle-o"></i> Table</a></li>
           </ul>
         </li>
+        <li><a class="app-menu__item active" href="../../systemcontrol/setting.php"><i class="app-menu__icon fa fa-cog"></i><span class="app-menu__label">Settings</span></a></li>
       </ul>
     </aside>
