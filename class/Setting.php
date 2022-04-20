@@ -54,7 +54,7 @@ class Setting{
         $data['site_author']         = mysqli_real_escape_string($this->db->link, $data['site_author']);
         $data['site_url']            = mysqli_real_escape_string($this->db->link, $data['site_url']);
         $data['site_type']           = mysqli_real_escape_string($this->db->link, $data['site_type']);
-        $data['site_robot']         = mysqli_real_escape_string($this->db->link, $data['site_robot']);
+        $data['site_robot']          = mysqli_real_escape_string($this->db->link, $data['site_robot']);
         $data['site_app_id']         = mysqli_real_escape_string($this->db->link, $data['site_app_id']);
         $data['site_twitter_author'] = mysqli_real_escape_string($this->db->link, $data['site_twitter_author']);
         $data['site_twitter_card']   = mysqli_real_escape_string($this->db->link, $data['site_twitter_card']);
