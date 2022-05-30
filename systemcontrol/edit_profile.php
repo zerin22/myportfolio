@@ -56,7 +56,7 @@
                     </div>
 
                     <div class="form-group btn-container">
-                        <input type="submit" class="btn btn-primary float-right" name="updateProfile" value="Update" >
+                        <input type="submit" class="btn btn-primary float-right" name="updateProfile" value="update" >
                     </div>
                     </form>
                 <?php

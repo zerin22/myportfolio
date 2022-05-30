@@ -62,8 +62,8 @@
                               <tr>
                                   <td><?php echo $data['title']; ?></td>
                                   <td><?php echo $data['institute']; ?></td>
-                                  <td><?php echo date('Y', strtotime($data['starting_year'])); ?></td>
-                                  <td><?php echo date('Y', strtotime($data['ending_year'])); ?></td>
+                                  <td><?php echo date('Y', strtotime($data['starting_date'])); ?></td>
+                                  <td><?php echo date('Y', strtotime($data['ending_date'])); ?></td>
                                   <td>
                                     <?php 
                                       if($data['graduation_status'] == 1)
@@ -85,7 +85,7 @@
                                     ?>
                                   </td>
                                   <td class="text-center">
-                                      <a href="" class="edit-link">
+                                      <a href="education_edit.php?id=<?php echo $data['id']; ?>" class="edit-link">
                                         <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                       </a>
                                       <a href="?id=<?php echo $data['id']; ?>" class="delete-link d-inline-block border-0">

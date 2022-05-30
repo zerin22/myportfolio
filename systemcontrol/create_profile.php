@@ -49,7 +49,7 @@
                   </div>
 
                   <div class="form-group btn-container">
-                    <input type="submit" class="btn btn-primary float-right" name="createProfile" value="Create Profile" >
+                    <input type="submit" class="btn btn-primary float-right" name="createProfile" value="save" >
                   </div>
                 </form>
               </div>

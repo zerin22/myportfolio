@@ -106,9 +106,9 @@ class User{
 
             $updateQuery = "UPDATE profiles 
                             SET
-                            `phone` = '$phone',
+                            `phone`   = '$phone',
                             `address` = '$address',
-                            `about` = '$about'
+                            `about`   = '$about'
                             WHERE `user_id` = '$user_id'";
             $updateResult = $this->db->update($updateQuery);
 

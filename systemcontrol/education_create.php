@@ -33,52 +33,64 @@
                 ?>
                 <form action="" method="POST">
 
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="educationTitle">Title<span class="text-danger">*</span></label>
-                                <input class="form-control" name="education_title" id="educationTitle" type="text" placeholder="Education Title">
-                            </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="educationTitle">Title<span class="text-danger">*</span></label>
+                        <input class="form-control" name="education_title" id="educationTitle" type="text" placeholder="Education Title">
+                      </div>
                     </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="educationInstitute">Institute<span class="text-danger">*</span></label>
+                        <input class="form-control" name="education_institute" id="educationInstitute" type="text" placeholder="Education Institute">
+                      </div>
+                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="educationInstitute">Institute<span class="text-danger">*</span></label>
-                                <input class="form-control" name="education_institute" id="educationInstitute" type="text" placeholder="Education Institute">
-                            </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="educationstartDate">Stating Date<span class="text-danger">*</span></label>
+                        <input class="form-control" name="education_start_Date" id="educationstartDate" type="date" placeholder="Education Stating Date">
+                      </div>
                     </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="educationEndDate">Ending Date<span class="text-danger">*</span></label>
+                        <input class="form-control" name="education_end_Date" id="educationEndDate" type="date" placeholder="Education Ending Date">
+                      </div>
+                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="educationstartDate">Stating Year<span class="text-danger">*</span></label>
-                                <input class="form-control" name="education_start_Date" id="educationstartDate" type="text" placeholder="Education Stating Date">
-                            </div>
-                        </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="educationGraduationStutas">Graduation Status<span class="text-danger">*</span></label>
+                        <select class="form-control" name="education_graduation_status" id="educationGraduationStutas">
+                          <option value="1">Graduated</option>
+                          <option value="0">Studying</option>
+                        </select>
+                      </div>
                     </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label for="educationActiveStatus">Active Status<span class="text-danger">*</span></label>
+                        <select class="form-control" name="education_active_status" id="educationActiveStatus">
+                          <option value="1">Active</option>
+                          <option value="0">Inactive</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
 
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="educationTitle">Title<span class="text-danger">*</span></label>
-                                <input class="form-control" name="education_title" id="educationTitle" type="text" placeholder="Education Title">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="form-group">
-                                <label for="educationTitle">Title<span class="text-danger">*</span></label>
-                                <input class="form-control" name="education_title" id="educationTitle" type="text" placeholder="Education Title">
-                            </div>
-                        </div>
-                    </div>
+                  <div class="form-group">
+                    <label for="educationDescription">Description</label>
+                    <textarea class="form-control" name="education_description" id="educationDescription" cols="30" rows="5" placeholder="Description"></textarea>
+                  </div>
 
                   <div class="form-group btn-container">
-                    <input type="submit" class="btn btn-primary float-right" name="createEducation" value="Create Profile" >
+                    <input type="submit" class="btn btn-primary float-right" name="createEducation" value="save" >
                   </div>
                 </form>
               </div>
