@@ -51,7 +51,7 @@
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label for="educationTitle">Title<span class="text-danger">*</span></label>
-                                        <input class="form-control" name="education_title" id="educationTitle" type="text" placeholder="Education Title" valueg="<?php echo $data['title'];?>">
+                                        <input class="form-control" name="education_title" id="educationTitle" type="text" placeholder="Education Title" value="<?php echo $data['title'];?>">
                                     </div>
                                 </div>
                                 <div class="col-6">

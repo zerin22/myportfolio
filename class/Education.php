@@ -86,6 +86,7 @@ class Education{
     //Update Education
     public function editEducation($id, $data)
     {
+        
         $title             = mysqli_real_escape_string($this->db->link, $data['education_title']);
         $institute         = mysqli_real_escape_string($this->db->link, $data['education_institute']);
         $starting_date     = mysqli_real_escape_string($this->db->link, $data['education_start_Date']);
@@ -94,7 +95,8 @@ class Education{
         $active_status     = mysqli_real_escape_string($this->db->link, $data['education_active_status']);
         $description       = mysqli_real_escape_string($this->db->link, $data['education_description']);
         
-        
+        echo $title.'-'.$institute.'-'.$starting_date.'#'.$graduation_status .'-'.$active_status;
+        exit();       
         //Checking if required fields are empty
         if($title = "" || $institute = "" || $starting_date = "" || $ending_date = "" || $graduation_status = "" || $active_status = "")
         {
