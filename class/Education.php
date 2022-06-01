@@ -32,7 +32,7 @@ class Education{
         
         
         //Checking if required fields are empty
-        if($title = "" || $institute = "" || $starting_date = "" || $ending_date = "" || $graduation_status = "" || $active_status = "")
+        if($title == "" || $institute == "" || $starting_date == "" || $ending_date == "" || $graduation_status == "" || $active_status == "")
         {
             $msg = '<div class="alert alert-danger text-center">
                         Required fields can be empty! 
@@ -95,10 +95,9 @@ class Education{
         $active_status     = mysqli_real_escape_string($this->db->link, $data['education_active_status']);
         $description       = mysqli_real_escape_string($this->db->link, $data['education_description']);
         
-        echo $title.'-'.$institute.'-'.$starting_date.'#'.$graduation_status .'-'.$active_status;
-        exit();       
+           
         //Checking if required fields are empty
-        if($title = "" || $institute = "" || $starting_date = "" || $ending_date = "" || $graduation_status = "" || $active_status = "")
+        if($title == "" || $institute == "" || $starting_date == "" || $ending_date == "" || $graduation_status == "" || $active_status == "")
         {
             $msg = '<div class="alert alert-danger text-center">
                         Required fields can be empty! 
@@ -106,6 +105,14 @@ class Education{
             return $msg;
         }
         
+        //Checking if graduation_status & active_status are neumaric
+        if(!is_numeric($graduation_status) && !is_numeric($active_status))
+        {
+            $msg = '<div class="alert alert-danger text-center">
+                        Something went wrong! Please try again later. 
+                    </div>';
+            return $msg;
+        }
 
         //Innserting data to database (education table)
         //Getting logged in user's user_id
@@ -116,17 +123,17 @@ class Education{
         if($getResult != NULL)
         {
             $updateQuery = " UPDATE `educations`
-                        SET 
-                        `title`             = '$title',
-                        `institute`         = '$institute',
-                        `starting_date`     = '$starting_date',
-                        `ending_date`       = '$ending_date',
-                        `graduation_status` = '$graduation_status',
-                        `active_status`     = '$active_status',
-                        `description`       = '$description'
-                        WHERE `id` = '$id' AND `user_id` = '$user_id'
+                            SET 
+                            `title`             = '$title',
+                            `institute`         = '$institute',
+                            `starting_date`     = '$starting_date',
+                            `ending_date`       = '$ending_date',
+                            `graduation_status` = '$graduation_status',
+                            `active_status`     = '$active_status',
+                            `description`       = '$description'
+                            WHERE `id` = '$id' AND `user_id` = '$user_id'
  
-            ";
+                        ";
             $updateResult = $this->db->update($updateQuery);
 
             if($updateResult)
@@ -172,7 +179,6 @@ class Education{
                                 Education data deleted successfully.
                             </div>";
                 return $msg;
-                header("location:dashboard.php");
             }else{
                 $msg = "
                             <div class='alert alert-danger text-center'>

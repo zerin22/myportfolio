@@ -24,6 +24,9 @@
       <div class="row">
         <div class="col-md-12">
           <div class="tile">
+            <div class="action-div clearfix mb-3">
+              <a href="education.php" class="float-right" style="text-decoration: none;"><i class="fa fa-graduation-cap" aria-hidden="true"></i> All Educations</a>
+            </div>
             <div class="row">
               <div class="col-lg-12">
                 <?php
